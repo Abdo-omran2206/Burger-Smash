@@ -2,7 +2,7 @@ import Image from "next/image";
 import { motion } from "motion/react";
 function About(){
   return(
-    <div className="flex flex-row px-30 py-50 gap-10">
+    <div className="flex flex-row px-30 py-50 gap-10 max-sm:flex-col max-sm:px-5 max-sm:py-20 ">
         <motion.div
         initial={{opacity:0, scale:0.8}}
         whileInView={{opacity:1, scale:1} }
@@ -17,11 +17,11 @@ function About(){
         transition={{duration:0.5}}
         viewport={{ once: true, amount: 0.5 }}
         className="w-[100%] flex flex-col justify-center">
-            <h2 className="text-4xl font-bold mb-5 tracking-tight leading-relaxed">
+            <h2 className="text-4xl font-bold mb-5 tracking-tight leading-relaxed max-sm:text-3xl max-sm:tracking-normal max-sm:leading-normal">
             FIND YOUR BEST TASTED FOOD & DRINK JUST IN ONE PLACE
             </h2>
             <hr className="border-2 border-[#E69E0A] mb-5 font-bold" />
-            <p className="text-xl/9 mb-5 w-[80%]">
+            <p className="text-xl/9 mb-5 w-[80%] max-sm:w-[100%] max-sm:text-sm">
             At Burger Smash, we don’t do average. We smash our burgers hard, sear them fast, and stack them high. Juicy beef, molten cheese, crispy edges—every bite is built to dominate your cravings.
     Forget boring, forget basic. Our burgers hit loud, bold, and unapologetic. Fries? Loaded. Shakes? Over the top. Flavor? Turned all the way up.
     This isn’t just food—it’s a smash to the face of bland burgers everywhere. Welcome to Burger Smash. Come hungry, leave wrecked
