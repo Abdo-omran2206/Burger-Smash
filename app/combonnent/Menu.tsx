@@ -50,7 +50,7 @@ function Menu(){
   }
 ]
     return(
-        <div className="px-8 py-6 w-full">
+        <div className="px-2 py-4 w-full">
             <motion.div
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -58,9 +58,9 @@ function Menu(){
             viewport={{ once: true, amount: 0.5 }}
             className="text-center mb-8 flex flex-col justify-center"
             >
-            <h2 className="text-5xl font-bold tracking-tight leading-relaxed text-center underline decoration-[#E69E0A] decoration-4 underline-offset-8">OUR MENU</h2>
+            <h2 className="text-5xl font-bold tracking-tight leading-relaxed text-center underline decoration-[#E69E0A] decoration-4 underline-offset-8 max-sm:text-4xl">OUR MENU</h2>
             </motion.div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 p-6 rounded-lg min-w-full">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 p-6 rounded-lg min-w-full max-sm:p-2">
             {menu.map((item, index) => (
                 <BurgerCard 
                     key={index}
@@ -88,7 +88,7 @@ function BurgerCard({ name, price, index, image }: BurgerCardProps) {
     return (
         <motion.div
             key={index}
-            className="border-2 rounded-2xl border-[#E69E0A] px-10 py-5 h-110"
+            className="border-2 rounded-2xl border-[#E69E0A] px-10 py-5 h-110 max-sm:px-5 max-sm:w-full max-sm:h-auto"
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.3, ease: "easeOut" }}
