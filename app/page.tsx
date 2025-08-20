@@ -17,7 +17,7 @@ export default function Home() {
         <section id='home' className="bg-[url(/360_F_416281579_t45mfWPWBlgGi9QV2KmqVem5aJfgXN9G.jpg)] bg-no-repeat bg-cover bg-center w-full h-full">
           <Burger/>
         </section>
-        <section id='about' className="w-full h-full flex justify-center items-center">
+        <section id='about' className="w-full h-full flex justify-center items-center max-sm:h-auto">
           <About/>
         </section>
         <section id='menu' className="w-full min-h-screen flex justify-center p-20">
@@ -73,7 +73,7 @@ function Navbar() {
   }, [navItems]);
 
   const item =
-    "relative overflow-hidden transition-all duration-300 ease-in-out p-3 m-1 cursor-pointer before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-1 before:bg-[#E69E0A] before:transition-all before:duration-300 before:ease-in-out hover:before:w-full";
+    "relative overflow-hidden transition-all duration-300 ease-in-out p-3 m-1 cursor-pointer before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-1 before:bg-[#E69E0A] before:transition-all before:duration-300 before:ease-in-out hover:before:w-full max-sm:px-2";
 
   const handleClick = (id: string) => {
     document.getElementById(id)?.scrollIntoView({
@@ -87,9 +87,9 @@ function Navbar() {
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
-      className="fixed top-5 left-1/2 -translate-x-1/2 px-5 bg-transparent backdrop-blur-lg rounded-3xl shadow-[1px_1px_20px_-4px_rgba(230,158,10,0.5)] border border-gray-700 z-50"
+      className="fixed top-5 left-1/2 -translate-x-1/2 px-5 bg-transparent backdrop-blur-lg rounded-3xl shadow-[1px_1px_20px_-4px_rgba(230,158,10,0.5)] border border-gray-700 z-50 max-sm:px-3"
     >
-      <ul className="flex flex-row gap-6 md:gap-10 text-white font-medium text-center">
+      <ul className="flex flex-row gap-6 md:gap-10 text-white font-medium text-center max-sm:text-sm max-sm:gap-3">
         {navItems.map((nav, i) => (
           <motion.li
             key={i}
