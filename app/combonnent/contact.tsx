@@ -15,7 +15,7 @@ function Contact() {
     "px-3 py-2 rounded-lg bg-black text-white border-2 border-[#F26100] focus:outline-none focus:border-[#E69E0A] transition";
 
   return (
-    <div className="py-20 bg-[#0f0f0f] max-sm:pt-20 max-sm:pb-0">
+    <div className="py-20 bg-[#0f0f0f] max-sm:pt-20 pb-0">
       {/* Title */}
       <motion.div
         className="px-10 text-center lg:text-left"
