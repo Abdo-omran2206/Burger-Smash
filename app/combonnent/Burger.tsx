@@ -101,21 +101,23 @@ export default function Burger() {
   }, []);
 
   return (
-    <div className="flex justify-center items-center flex-row w-full h-full gap-5">
+    <div className="flex justify-center items-center flex-row w-full h-full gap-5 px-5 max-sm:flex-col max-sm:gap-2">
       <motion.div
       initial={{opacity:0,x:-50}}
       animate={{opacity:1,x:0, transition:{duration:0.5}}}
-      className="w-[50%] max-w-[640px]">
-        <h1 className="text-7xl text-left text-shadow-xl/20 text-shadow-amber-600">Burger Smash</h1>
-        <p className="mt-4 text-white text-2xl">
+      className="w-[50%] max-w-[640px] max-sm:w-[100%] max-sm:text-center">
+        <h1 className="text-7xl text-left max-sm:text-4xl max-sm:text-center drop-shadow-[0_4px_24px_rgba(255,191,0,0.6)]">
+          Burger Smash
+        </h1>
+        <p className="mt-4 text-white text-2xl max-sm:text-sm">
           Welcome to Burger Smash — your neighborhood spot for juicy, smashed-to-order burgers, buttery toasted buns, and hand-cut fries.
         </p>
-        <ul className="mt-4 text-white space-y-1 list-disc pl-5 text-lg">
+        <ul className="mt-4 text-white space-y-1 list-disc pl-5 text-lg max-sm:hidden">
           <li>100% fresh beef, smashed hot on the griddle</li>
           <li>House-made sauces and daily-baked buns</li>
           <li>Shakes, fries, and vegan options</li>
         </ul>
-        <div className="mt-6 flex gap-3">
+        <div className="mt-6 flex gap-3 max-sm:hidden">
           <a href="#" className="px-5 py-2 bg-black text-white border-white border-1 rounded-4xl">View Menu</a>
           <a
             href="#"
@@ -127,9 +129,8 @@ export default function Burger() {
       
       <motion.div
       initial={{scale:0}}
-      animate={{scale:1}}
-      
-      ref={mountRef}className="w-[50%] h-[70vh]"></motion.div>
+      animate={{scale:1, transition:{duration:0.5}}}
+      ref={mountRef}className="w-[50%] h-[70vh] max-sm:w-[100%] max-sm:h-[50vh]"></motion.div>
     </div>
     
   );
