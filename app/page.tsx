@@ -20,16 +20,16 @@ export default function Home() {
         <section id='about' className="w-full h-full flex justify-center items-center max-sm:h-auto">
           <About/>
         </section>
-        <section id='menu' className="w-full min-h-screen flex justify-center p-20">
+        <section id='menu' className="w-full min-h-screen flex justify-center p-20 max-sm:p-3">
           <Menu/>
         </section>
         <section className="w-full h-full flex justify-center items-center">
           <CTA/>
         </section>
-        <section id='contact' className='w-full h-full'>
+        <section id='contact' className='w-full h-auto'>
           <Contact/>
         </section>
-        <footer>
+        <footer id='footer' className='w-full h-auto'>
           <Footer/>
         </footer>
       </main>
