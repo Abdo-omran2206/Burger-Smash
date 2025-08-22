@@ -2,7 +2,6 @@
 
 A modern, interactive burger restaurant website built with Next.js, featuring stunning 3D graphics, smooth animations, and a responsive design.
 
-![Burger Smash](public/360_F_416281579_t45mfWPWBlgGi9QV2KmqVem5aJfgXN9G.jpg)
 
 ## ✨ Features
 
